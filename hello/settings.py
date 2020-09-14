@@ -55,7 +55,7 @@ ROOT_URLCONF = 'hello.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:\\Users\\Muhammad Hashim\\hello\\bestproducts\\templates\\"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

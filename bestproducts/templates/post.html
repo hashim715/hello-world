@@ -1,0 +1,11 @@
+{% extends "base.html"  %}
+{% block title %}thi is a post{% endblock %}
+{% block content %}
+<h2>simple post</h2>
+<ul>
+{% for field in object_list %}
+    <li><a href="{% url 'article' field.pk %}">{{field.title}}</a> - {{field.body}}<br/>
+    {{field.author}}-{{field.date_field}}<a href="{% url 'update_post' field.pk %}">(Edit)</a><a href="{% url 'delete_post' field.pk %}">(Delete)</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
